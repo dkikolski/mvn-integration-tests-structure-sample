@@ -2,7 +2,7 @@
 
 ## Motivation
 
-Separating unit tests from integration tests helps in better, logical organization of tests within project.
+Separating unit tests from integration tests helps in better, logical organization of tests within a project.
 
 The goal is to have the following structure:
 
@@ -21,13 +21,12 @@ The goal is to have the following structure:
         └── resources
 ```
 
-Directories `src/main` and `src/test`
-are [standard directories](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
+Directories `src/main` and `src/test`are [standard directories](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
 for maven project.
 
-Directory `src/test-it` is a custom directory containing integration tests and its name can be customized.
+Directory `src/test-it` is a custom directory containing integration tests. Name of the directory can be adjusted in the configuration (see next section).
 
-Repository contains dummy Spring-based project to demonstrate tests organization and
+Repository contains exemplary Spring-based project, to demonstrate on real-life example how unit and integration tests can be structured. 
 
 ## Requirements
 
@@ -44,7 +43,7 @@ Three plugins are required to make it work
 
 Configuration of a `builder-helper-maven-plugin` consists of two steps:
 
-1. Configuration of an integration tests source code location
+#### Configuration of an integration tests source code location:
 
 ```xml
 
@@ -62,7 +61,7 @@ Configuration of a `builder-helper-maven-plugin` consists of two steps:
 </execution> 
 ```
 
-2. Configuration of an integration tests resources location
+#### Configuration of an integration tests resources location:
 
 ```xml
 
